@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'quentine';
+    src: url('../fontes/Quentine\ Typeface.otf') format('opentype'), url('../fontes/Quentine\ Typeface.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #A8A222;
+    --cor1: #75722F;
+    --cor2: #DBD000;
+    --cor3: #424128;
+    --cor4: #333229;
+
+    --fonte-padrao: 'quentine', 'serif';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    
+    min-width: 280px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1 {
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-size: 4em; 
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.500);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 5px;
+}
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.5em;
+    color: rgba(130, 139, 4, 0.616);
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+}
+
+article > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+}
+
+main {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+}
+
+main ul {
+    margin-left: 15px;
+}
+
+div.video {
+    margin: 0px -20px 30px -80px;
+    padding: 20px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 18%;
+    width: 70%;
+    height: 100%;
+}
+
+footer {
+    color: rgb(151, 151, 151);
+    background-color: var(--cor4);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.767);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
