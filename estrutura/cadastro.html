@@ -5,15 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilo/style.css">
-    <title>Restaurante</title>
-    
+    <title>Restaurante</title>  
 </head>
 <body>
     <header>
         <h1>Cadastro</h1>
     </header>
-    <main>
-        <p style="text-align: right;"><a href="../index.html" rel="prev" target="_self">Voltar para página inicial</a></p>
-    </main>
+        <main>
+            <form action="../cadastro.js" method="post" autocomplete="on">
+                <fieldset>
+                    <p>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" required minlength="5" maxlength="15" size="20" autocomplete="username">
+                    </p>
+                    <p>
+                        <label for="iemail">Email: </label>
+                        <input type="email" name="email" id="iemail" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$" autocomplete="email">
+                    </p>
+                    <p>
+                        <label>Sexo:</label> 
+                        <input type="radio" name="sex" id="masc" value="M" required> <label for="masc">Masculino</label>
+                        <input type="radio" name="sex" id="fem" value="F" required> <label for="fem">Feminino</label>
+                    </p>
+                    <p>
+                        <label for="itelefone">Telefone: </label>
+                        <input type="tel" name="telefone" id="itelefone" required placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+                    </p>
+                    <p>
+                        <label for="idia">Data de Nascimento: </label>
+                        <input type="date" name="dia" id="idia" required autocomplete="bday" placeholder="xx/xx/xxxx">
+                    </p>
+                    <p>
+                        <label for="isen"> Senha: </label>
+                        <input type="password" name="senha" id="isen" required minlength="8" maxlength="15" size="20" autocomplete="new-password">
+                    </p>
+                    <p>
+                        <label for="conisen"> Confirmar Senha: </label>
+                        <input type="password" name="senha" id="conisen" required minlength="8" maxlength="15" size="20" autocomplete="new-password">
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastrar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </fieldset>
+            </form>
+            <p style="text-align: right;"><a href="../index.html" rel="prev" target="_self">Voltar para página inicial</a></p>
+        </main>
 </body>
 </html>
