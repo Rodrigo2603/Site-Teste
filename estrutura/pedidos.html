@@ -13,19 +13,32 @@
         <p>Faça o download do cardápio <a href="../downloads/cardapio.pdf" download="cardapio" type="application/pdf">aqui</a></p>
     </header>
     <main>
-        <ul>
-            <li>Bebidas</li>
-            <ul>
-                <li>Bebida 1</li>
-                <li>Bebida 2</li>
-            </ul>
-            <li>Comidas</li>
-            <ul>
-                <li>Comida 1</li>
-                <li>Comida 2</li>
-                <li>Comida 3</li>
-            </ul>
-        </ul>
+        <form action="pedidos.js" method="post">
+            <p>
+                <label for="icomida">Comida</label><br>
+                <select name="comida" id="icomida">
+                    <option value="Comida 1">Comida 1</option>
+                    <option value="Comida 2">Comida 2</option>
+                    <option value="Comida 3">Comida 3</option>
+                    <option value="Nenhum">Nenhum</option>
+                </select>
+            </p>
+            <p>
+                <label for="ibebida">Bebida</label><br>
+                <select name="bebida" id="ibebida">
+                    <option value="Bebida 1">Bebida 1</option>
+                    <option value="Bebida 2">Bebida 2</option>
+                    <option value="Nenhum">Nenhum</option>
+                </select>
+            </p>  
+            <p>
+                <label for="imsg">Detalhes adicionais do pedido: </label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>     
+            <p>
+                <input type="submit" value="Fazer Pedido">
+            </p>
+        </form>
         <p style="text-align: right;">
             <a href="../index.html" rel="prev" target="_self"> Voltar para página inicial</a>
         </p>
