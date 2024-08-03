@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'quentine';
-    src: url('../fontes/Quentine\ Typeface.otf') format('opentype'), url('../fontes/Quentine\ Typeface.ttf') format('truetype');
+    src: url('../fonts/Quentine\ Typeface.otf') format('opentype'), url('../fonts/Quentine\ Typeface.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
