@@ -12,7 +12,7 @@
         <h1>Cadastro</h1>
     </header>
         <main>
-            <form action="scripts/cadastro.js" method="post" autocomplete="on">
+            <form id='cadastro' method="post" autocomplete="on">
                 <fieldset>
                     <p>
                         <label for="inome">Nome: </label>
@@ -41,13 +41,15 @@
                     </p>
                     <p>
                         <label for="conisen">Confirmar Senha: </label>
-                        <input type="password" name="senha" id="conisen" required minlength="8" maxlength="15" size="15" autocomplete="new-password">
+                        <input type="password" name="confirmaSenha" id="conisen" required minlength="8" maxlength="15" size="15" autocomplete="new-password">
                     </p>
                     <p>
                         <input type="submit" value="Cadastrar">
                     </p>
+                    <p id="resposta" style="margin: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 0.5em;"></p>
                 </fieldset>
             </form>
+            <script src="scripts/cadastro.js"></script>
         </main>
 </body>
 </html>
